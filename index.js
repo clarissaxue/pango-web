@@ -8,7 +8,9 @@ const IMAGES = [
 
 let changeImageButtonEl;
 //let centerImageEl;
-let changeToCamera
+let changeToCameraButtonEl;
+let changeToAboutButtonEl;
+let checkMatchButtonEl;
 let activeImageIndex = 0;
 
 function changeImage(e) {
@@ -20,9 +22,13 @@ function changeImage(e) {
 function init() {
 //    changeImageButtonEl = document.querySelector('#change-image-button');
 
-   centerImageEl = document.querySelector('#center-image');
+ //  centerImageEl = document.querySelector('#center-image');
+   changeToAboutButtonEl = document.querySelector('#logo-area');
+   changeToCameraButtonEl = document.querySelector('#startbutton');
 
-   centerImageEl.addEventListener('click', changeImage)
+   changeToCameraButtonEl.addEventListener('click', changeImage);
+   //changeToCameraButtonEl.addEventListener('click', cameraStartup)
+   
 }
 
 

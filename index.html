@@ -9,14 +9,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="./index.js"></script>
+        <script src="./camera.js"></script>
     </head>
     <body>
         <!--home-->
-        <div>
-            <img src="images/home.jpg" id="center-image" class="center" alt="home" usemap="#startmap"/>
-            <map name="startmap" id="get-started-area">
-            <area  title="startmap" shape="rect" coords="161,1030,601,902" />
-            </map>
+        <section id="Display">
+            <div>
+                <img src="images/home.jpg" id="center-image" class="center" alt="home" usemap="#startmap"/>
+                <map name="startmap" id="startbutton">
+                <area  title="startmap" shape="rect" coords="161,1030,601,902" />
+                </map>
+                <a href="/camera.html">camera</a>
+            </div>
+        </section>
+
+        <section id="Camera">
+            <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button> 
+            </div>
+            <canvas id="canvas">
+            </canvas>
+            <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box."> 
+            </div>
+	        <p>
+		        Visit our article <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"> Taking still photos with WebRTC</a> to learn more about the technologies used here.
+	        </p>
+        
+        </section>
 
         </div>
 

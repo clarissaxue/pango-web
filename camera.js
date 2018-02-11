@@ -1,4 +1,5 @@
 (function() {
+
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
   // calculated based on the aspect ratio of the input stream.
@@ -19,11 +20,11 @@
   var photo = null;
   var startbutton = null;
 
-  function startup() {
-    video = document.getElementById('video');
-    canvas = document.getElementById('canvas');
-    photo = document.getElementById('photo');
-    startbutton = document.getElementById('startbutton');
+  function cameraStartup() {
+    video = document.getElementById('#video');
+    canvas = document.getElementById('#canvas');
+    photo = document.getElementById('#photo');
+    startbutton = document.getElementById('#startbutton');
 
     navigator.getMedia = ( navigator.getUserMedia ||
                            navigator.webkitGetUserMedia ||
@@ -45,7 +46,7 @@
         video.play();
       },
       function(err) {
-        console.log("An error occured! " + err);
+        console.log("An error occurred! " + err);
       }
     );
 
@@ -107,8 +108,4 @@
       clearphoto();
     }
   }
-
-  // Set up our event listener to run the startup process
-  // once loading is complete.
-  window.addEventListener('load', startup, false);
 })();
