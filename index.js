@@ -2,12 +2,13 @@ const IMAGES = [
     'home',
     'about',
     'fineapple',
+    'mangno',
     'loading'
 ]
 
 let changeImageButtonEl;
-let centerImageEl;
-
+//let centerImageEl;
+let changeToCamera
 let activeImageIndex = 0;
 
 function changeImage(e) {
@@ -17,7 +18,7 @@ function changeImage(e) {
 }
 
 function init() {
-   changeImageButtonEl = document.querySelector('#change-image-button');
+//    changeImageButtonEl = document.querySelector('#change-image-button');
 
    centerImageEl = document.querySelector('#center-image');
 
